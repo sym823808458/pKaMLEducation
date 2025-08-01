@@ -1,0 +1,21 @@
+Molecule Name,SMILES,Carbon Number,Hydroxyl Groups,Carboxyl Groups,Unsaturated Bonds,Halogen Substituents,pKa
+Formic acid,O=CO,1,0,1,0,0,3.75
+Acetic acid,CC(=O)O,2,0,1,0,0,4.76
+Propionic acid,CCC(=O)O,3,0,1,0,0,4.88
+Butyric acid,CCCC(=O)O,4,0,1,0,0,4.82
+Hexanoic acid,CCCCCCC(=O)O,6,0,1,0,0,4.88
+Heptanoic acid,CCCCCCCC(=O)O,7,0,1,0,0,4.89
+Octanoic acid,CCCCCCCCC(=O)O,8,0,1,0,0,4.89
+Decanoic acid,CCCCCCCCCC(=O)O,10,0,1,0,0,4.9
+Lactic acid,CC(O)C(=O)O,3,1,1,0,0,3.86
+Glycolic acid,OCC(=O)O,2,1,1,0,0,3.83
+Pyruvic acid,CC(=O)C(=O)O,3,0,1,0,0,2.45
+Malonic acid,O=C(O)CC(=O)O,3,0,2,0,0,2.85
+Succinic acid,OC(=O)CCC(=O)O,4,0,2,0,0,4.21
+Adipic acid,OC(=O)CCCCC(=O)O,6,0,2,0,0,4.43
+Methacrylic acid,C=C(C)C(=O)O,4,0,1,1,0,4.65
+Chloroacetic acid,ClCC(=O)O,2,0,1,0,1,2.87
+Dichloroacetic acid,ClC(Cl)C(=O)O,2,0,1,0,2,1.26
+Trichloroacetic acid,ClC(Cl)(Cl)C(=O)O,2,0,1,0,3,0.51
+Valeric acid,CCCCC(=O)O,,,,,,
+o-Nitrophenol,O=N+c1ccccc1O,,,,,,

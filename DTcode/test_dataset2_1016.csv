@@ -1,0 +1,21 @@
+Molecule Name,SMILES,Carbon Number,Hydroxyl Groups,Carboxyl Groups,Unsaturated Bonds,Halogen Substituents,Aromatic Rings,"Substituent Type (1=electron-donating, -1=electron-withdrawing)","Substituent Position (1=ortho, 2=meta, 3=para)",Phenolic Hydroxyl,pKa
+Benzoic acid,c1ccccc1C(=O)O,7,0,1,1,0,1,0,0,0,4.2
+p-Toluic acid,Cc1ccc(C(=O)O)cc1,8,0,1,1,0,1,1,3,0,4.37
+p-Nitrobenzoic acid,O=C(O)c1ccc([N+](=O)[O-])cc1,7,0,1,1,0,1,-1,3,0,3.44
+p-Aminobenzoic acid,Nc1ccc(C(=O)O)cc1,7,0,1,1,0,1,1,3,0,4.92
+m-Toluic acid,Cc1cccc(C(=O)O)c1,8,0,1,1,0,1,1,2,0,4.25
+m-Nitrobenzoic acid,O=C(O)c1cccc([N+](=O)[O-])c1,7,0,1,1,0,1,-1,2,0,3.46
+m-Aminobenzoic acid,Nc1cccc(C(=O)O)c1,7,0,1,1,0,1,1,2,0,4.74
+o-Toluic acid,Cc1ccccc1C(=O)O,8,0,1,1,0,1,1,1,0,3.93
+o-Nitrobenzoic acid,O=C(O)c1ccccc1[N+](=O)[O-],7,0,1,1,0,1,-1,1,0,2.21
+o-Aminobenzoic acid,Nc1ccccc1C(=O)O,7,0,1,1,0,1,1,1,0,4.95
+Salicylic acid,O=C(O)c1ccccc1O,7,1,1,1,0,1,1,1,1,2.97
+p-Anisic acid,COc1ccc(C(=O)O)cc1,8,0,1,1,0,1,1,3,0,4.5
+Coumarin,O=c1ccc2ccccc2o1,9,0,0,1,0,1,0,0,0,9.3
+Phenol,Oc1ccccc1,6,1,0,1,0,1,0,0,1,9.99
+p-Nitrophenol,C1=CC(=CC=C1[N+](=O)[O-])O,6,1,0,1,0,1,-1,3,1,7.15
+m-Nitrophenol,C1=CC(=CC(=C1)O)[N+](=O)[O-],6,1,0,1,0,1,-1,2,1,8.36
+Catechol,Oc1ccccc1O,6,2,0,1,0,1,1,1,1,9.45
+Hydroquinone,Oc1ccc(O)cc1,6,2,0,1,0,1,1,3,1,9.96
+p-Hydroxybenzoic acid,O=C(O)c1ccc(O)cc1,,,,,,,,,,
+o-Nitrophenol,C1=CC=C(C(=C1)[N+](=O)[O-])O,,,,,,,,,,
