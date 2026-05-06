@@ -1,73 +1,96 @@
-# Interactive pKa Prediction Tool for Chemistry Education
+# pKa-ML Education
 
-🎓 **A Zero-Programming Educational Tool for Teaching Machine Learning in Chemistry**
+No-code decision-tree software and teaching datasets for an undergraduate laboratory experiment on organic acid pKa prediction.
 
-An interactive GUI application that teaches undergraduate chemistry students both acid-base chemistry and machine learning concepts through pKa prediction using decision trees. **No programming experience required** - just download and run!
-✨ Key Features  
-🎯 Zero Programming Barrier  
-Complete graphical user interface (Tkinter-based)  
-Built-in step-by-step tutorial covering ML concepts    
-Click-and-explore interface for all functions  
-No command line or coding required  
-📚 Educational Components  
-Interactive Knowledge Steps: 9-step tutorial covering acid-base chemistry and ML basics  
-Dataset Visualization: Click molecules to see structures, explore pKa distributions  
-Decision Tree Depth Selection: Visual explanation of model complexity  
-Real-time Performance Metrics: MAE, MSE, R² with training vs validation comparison  
-Overfitting Demonstration: See how model complexity affects generalization  
-🧪 Chemical Integration  
-SMILES to Structure: Automatic molecular visualization using RDKit  
-Feature Engineering: Learn how molecular properties become ML features  
-Chemical Interpretation: Connect decision tree splits to chemical logic   
-🎓 Educational Objectives  
-Students will learn to:  
-✅ Understand decision tree machine learning models  
-✅ Recognize and prevent overfitting through depth comparison  
-✅ Evaluate model performance using standard metrics  
-✅ Connect molecular structure to chemical properties  
-✅ Interpret SMILES notation and molecular descriptors  
-✅ Apply computational thinking to chemistry problems  
-📊 Built-in Datasets  
-Dataset 1: Aliphatic Carboxylic Acids  
-18 molecules: Formic acid to trichloroacetic acid  
-5 features: Carbon count, functional groups, substituents  
-pKa range: 0.51 - 4.90  
-Purpose: Introduction to structure-activity relationships  
-Dataset 2: Aromatic Acids and Phenols  
-18 molecules: Aromatic compounds with diverse substituents  
-9 features: Including aromaticity, electronic effects, positions  
-pKa range: 2.21 - 9.99  
-Purpose: Advanced electronic effects and conjugation  
+## Current manuscript version
 
+The current source-code and dataset version used for the manuscript package is stored in:
 
-## 🚀 Quick Start (Choose Your Method)
+`DTcode/current`
 
-### Option 1: Windows Users - Direct Download (Easiest!)
-1. **Download the executable**: Go to [10.6084/m9.figshare.29755451](https://figshare.com/articles/software/predictpka250523_exe/29755451?file=56780045) and download `pKa_Predictor.exe`
-2. **Double-click to run** - No installation needed!
-3. **Start learning** - Follow the built-in tutorial
+Current files:
 
-### Option 2: Python Users - Source Code
-git clone https://github.com/sym823808458/pKaMLEducation.git
-📁 Technical Details
-Dependencies
-tkinter          # GUI framework (built-in with Python)
-pandas          # Data manipulation
-numpy           # Numerical computing
-rdkit           # Molecular informatics
-PIL (Pillow)    # Image processing
-scikit-learn    # Machine learning
-matplotlib      # Plotting
+- `predictpka260324.py`
+- `dataset1.csv` to `dataset5.csv`
 
-### Option 2: Python Users - Jupyter notebook Code
-see PredictpKa_notebook.ipynb
+The Windows executable is distributed separately through figshare:
 
-📄 Citation
-If you use this tool in your research or teaching, please cite:
-@article{su2024interactive,
-  title={An Interactive and Interpretable Decision Tree Tool for Teaching pKa Prediction in Undergraduate Chemistry},
-  author={Su, Yuming and Cheng, Siman and Wang, Cheng and Ren, Yanping},
-  journal={Journal of Chemical Education},
-  year={2024},
-  note={In preparation}
-}
+[https://doi.org/10.6084/m9.figshare.29755451](https://doi.org/10.6084/m9.figshare.29755451)
+
+Earlier files in `DTcode` are retained as legacy development materials. For manuscript reproduction, use only `DTcode/current` unless otherwise noted.
+
+## What this project teaches
+
+This project introduces first-year undergraduate chemistry students to machine learning through a familiar chemical problem: predicting organic acid pKa values. The experiment uses an interpretable decision-tree model and a graphical interface so that students can complete the workflow without programming.
+
+Students practice:
+
+- translating molecular structures into numerical descriptors;
+- comparing training, validation, and fixed external test performance;
+- understanding overfitting through decision-tree depth;
+- interpreting decision-tree splits and feature importance in chemical language;
+- improving model generalization through chemistry-guided feature engineering.
+
+## Dataset progression
+
+The five datasets correspond to progressively improved feature-engineering cases.
+
+| File | Teaching role |
+| --- | --- |
+| `dataset1.csv` | Baseline descriptors using simple carbon and carboxyl counts. |
+| `dataset2.csv` | Adds a coarse halogen-count descriptor. |
+| `dataset3.csv` | Expands substituent descriptors into element/group-specific counts. |
+| `dataset4.csv` | Adds electron-withdrawing group position and flag descriptors. |
+| `dataset5.csv` | Uses compact chemistry-aware descriptors, including `EWG_Pos` and `EWG_Rank`. |
+
+Molecular structures and pKa-related records were collected from PubChem and curated by the authors for teaching use. The curated teaching data files are provided in `DTcode/current`.
+
+The fixed external test set contains four molecules:
+
+- Octanoic acid
+- 3-Chlorobutanoic acid
+- Iodoacetic acid
+- Phenylglyoxylic acid
+
+These molecules should remain outside model training and hyperparameter selection.
+
+## How to run
+
+### Option 1: Windows executable
+
+Download the executable from figshare:
+
+[https://doi.org/10.6084/m9.figshare.29755451](https://doi.org/10.6084/m9.figshare.29755451)
+
+Then run the downloaded executable on Windows.
+
+### Option 2: Python source
+
+Clone this repository and run:
+
+```bash
+python DTcode/current/predictpka260324.py
+```
+
+Typical dependencies include:
+
+- Python
+- tkinter
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- Pillow
+- RDKit
+
+RDKit installation depends on the local Python environment. If the executable is available, Windows users can use it directly without manually installing these packages.
+
+## Recommended citation
+
+If you use this software or dataset in teaching or research, please cite the associated manuscript when available:
+
+Yuming Su, Siman Cheng, Cheng Wang, and Yanping Ren. Interpretable machine learning for organic acid pKa prediction: a no-code feature-engineering laboratory experiment for first-year undergraduates. Manuscript in preparation.
+
+## License
+
+See `LICENSE`.
