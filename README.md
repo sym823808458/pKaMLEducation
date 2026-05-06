@@ -6,7 +6,7 @@ No-code decision-tree software and teaching datasets for an undergraduate labora
 
 The current source-code and dataset version used for the manuscript package is stored in:
 
-`DTcode/current`
+`DTcode`
 
 Current files:
 
@@ -17,7 +17,7 @@ The Windows executable is distributed separately through figshare:
 
 [https://doi.org/10.6084/m9.figshare.29755451](https://doi.org/10.6084/m9.figshare.29755451)
 
-Earlier files in `DTcode` are retained as legacy development materials. For manuscript reproduction, use only `DTcode/current` unless otherwise noted.
+Legacy development files are not displayed in the main branch. They are retained only in older commits or releases for traceability.
 
 ## What this project teaches
 
@@ -43,7 +43,7 @@ The five datasets correspond to progressively improved feature-engineering cases
 | `dataset4.csv` | Adds electron-withdrawing group position and flag descriptors. |
 | `dataset5.csv` | Uses compact chemistry-aware descriptors, including `EWG_Pos` and `EWG_Rank`. |
 
-Molecular structures and pKa-related records were collected from PubChem and curated by the authors for teaching use. The curated teaching data files are provided in `DTcode/current`.
+Molecular structures and pKa-related records were collected from PubChem and curated by the authors for teaching use. The curated teaching data files are provided in `DTcode`.
 
 The fixed external test set contains four molecules:
 
@@ -69,7 +69,7 @@ Then run the downloaded executable on Windows.
 Clone this repository and run:
 
 ```bash
-python DTcode/current/predictpka260324.py
+python DTcode/predictpka260324.py
 ```
 
 Typical dependencies include:

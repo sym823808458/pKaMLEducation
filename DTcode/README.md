@@ -1,6 +1,6 @@
 # Current pKa Predictor Version
 
-This folder contains the current source code and datasets used for the manuscript package.
+This folder contains the current source code and datasets used for the manuscript package. Legacy development files are preserved only in older commits or releases, so the main branch remains focused on the current teaching version.
 
 ## Files
 
@@ -36,4 +36,4 @@ Molecular structures and pKa-related records were collected from PubChem and cur
 
 ## Version note
 
-This folder supersedes earlier development files in `DTcode`. Earlier files are preserved only for historical traceability.
+This folder supersedes earlier development files. Earlier files are preserved only in older commits or releases for historical traceability.
